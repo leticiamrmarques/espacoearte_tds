@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Letícia Meneses Marques">
+        <meta name="keywords"
+            content="Móveis planejados, projeto, inteiores, design, arquitetura, arquiteta, reforma, obras, móveis sob medida, marcenaria, marceneiro, palmas, assessoria em obras">
+        <title>Contato</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <header>
+            <img src="img/banner.png" />
+        </header>
+
+        <nav>
+            <a class="a-menu" href="index.html">Início</a>
+            <a class="a-menu" href="index.html#pag-inspirese"> Inspire-se </a>
+            <a class="a-menu" href="index.html#pag-planejados"> Móveis
+                Planejados </a>
+            <a class="a-menu" href="index.html#pag-interiores"> Projeto de
+                Interiores </a>
+            <a class="a-menu" href="index.html#pag-assessoria"> Assessoria em
+                Obras </a>
+            <a class="a-menu" href="sobre.html"> Sobre Nós </a>
+        </nav>
+
+        <h1 id="titulo-sobre">Sobre Nós</h1>
+
+        <main>
+
+            <div class="sobre-texto">
+                <p id="texto-eliane">Eliane Marques, responsável técnica, é
+                    designer de interiores e
+                    se destaca por desenvolver projetos que unem estética e
+                    funcionalidade, sempre focando nas reais necessidades do
+                    cotidiano. Seu trabalho valoriza o conforto, a praticidade e
+                    o
+                    uso inteligente dos espaços, criando ambientes
+                    personalizados
+                    que facilitam a rotina e refletem o estilo de vida de cada
+                    cliente.</p>
+
+                <div id="eliane-img">
+                    <img class="sobre-img" src="img/eliane.png">
+                    <span>Eliane Marques</span>
+                    <span>ABD 42165 — CREA 334428TO</span>
+                </div>
+            </div>
+
+            <div class="sobre-texto">
+                <div id="marcio-img">
+                    <img class="sobre-img" src="img/marcio.png">
+                    <span>Márcio Marques</span>
+                </div>
+
+                <p id="texto-marcio">Márcio Marques é responsável pela operação
+                    da marcenaria,
+                    cuidando da aquisição de materiais, conferência da produção
+                    e
+                    supervisiona as montagens. Sua atenção aos detalhes e seu
+                    compromisso com o pós-venda asseguram que cada ambiente
+                    planejado seja entregue conforme o combinado, com acabamento
+                    impecável e total funcionalidade.</p>
+
+            </div>
+
+        </main>
+
+        <hr id="contato">
+
+        <h2 id="entre-em-contato"> Entre em Contato</h2>
+
+        <form name="contato" method="get">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" maxlength="50"
+                placeholder="Nome completo" required>
+
+            <label for="email" type>E-mail:</label>
+            <input type="email" name="email" maxlength="50"
+                placeholder="nome@email.com" required>
+
+            <label for="senha">Senha:</label>
+            <input id="senha" type="password" name="senha"
+                placeholder="Somente números">
+
+            <label for="celular">Celular:</label>
+            <input id="celular" type="tel" name="celular"
+                placeholder="(99) 99999-9999" pattern="^\(\d{2}\)\d{5}-\d{4}$"
+                maxlength="14" />
+
+            <label for="servico">Serviço:</label>
+            <select name="servico">
+                <option value>Selecione</option>
+                <option value="marcenaria">Marcenaria</option>
+                <option value="projetos">Projeto de Interiores</option>
+                <option value="assessoria">Assessoria em Obras</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" name="data" />
+
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" />
+
+            <label for="aulas">Visitas:</label>
+            <input type="number" name="visitas" min="1" max="10" step="1" />
+
+            <label for="qntd">Quantidade:</label>
+            <input type="number" name="qntd" min="1" max="5"
+                step="1" placeholder="nº">
+
+            <fieldset>
+                <legend>Endereço:</legend>
+                <input type="radio" name="endereco" value="palmas">
+                <label for="palmas">Palmas - TO</label>
+                <input type="radio" name="endereco" value="outra">
+                <label for="outra">Outra cidade</label>
+            </fieldset>
+
+            <label for="msg">Mensagem:</label>
+            <textarea name="msg" cols="75" rows="5"
+                placeholder="Descreva sua necessidade"></textarea>
+
+            <input type="submit" name="btn-salvar" value="ENVIAR">
+            <input type="reset" name="btn-cancelar" value="CANCELAR">
+        </form>
+
+        <footer>
+            <p align="center">Desenvolvido por <a class="a-link"
+                    href="https://www.instagram.com/ignota.garota/"
+                    target="_blank"> Letícia Marques </a> - 2025 </p>
+        </footer>
+
+    </body>
+</html>
